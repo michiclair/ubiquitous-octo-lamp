@@ -11,6 +11,7 @@ export default function NoteList(params: INoteListParams) {
             params.behavior == NoteListShowBehavior.ShowArchived && n.isArchived)
         .map(n => <NoteItem key={n.id} onClick={params.onNoteSelection}
                             id={n.id} name={n.name} isArchived={n.isArchived}
+                            categories={n.categories}
                             onArchiveRequest={params.onNoteArchiveRequest}
                             onUnarchiveRequest={params.onNoteUnarchiveRequest}/>);
 
