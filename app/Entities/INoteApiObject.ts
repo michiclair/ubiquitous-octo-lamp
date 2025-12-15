@@ -5,5 +5,5 @@ export interface INoteApiObject {
     readonly name: string;
     readonly content: string;
     readonly isArchived: boolean;
-    readonly categoryIds: Snowflake[];
+    readonly categories: Snowflake[];
 }

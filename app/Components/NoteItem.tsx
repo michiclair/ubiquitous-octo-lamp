@@ -28,6 +28,7 @@ export interface INoteItemParams {
     id: Snowflake;
     name: string;
     isArchived: boolean;
+    categories: Snowflake[]
     onClick?: (params: Snowflake) => unknown;
     onArchiveRequest?: (params: Snowflake) => unknown;
     onUnarchiveRequest?: (params: Snowflake) => unknown;

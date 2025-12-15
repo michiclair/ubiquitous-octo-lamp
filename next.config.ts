@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: "export",
-  basePath: `/turbo-carnival`,
+  basePath: `/ubiquitous-octo-lamp`,
 };
 
 export default nextConfig;
